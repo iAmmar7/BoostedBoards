@@ -11,7 +11,7 @@ html{
 }
 body {
   background: rgb(242, 242, 242);
-  font-family: acumin-pro, "“Helvetica Neue”", Helvetica, Arial, sans-serif
+  font-family: 'Abel', "“Helvetica Neue”", Helvetica, Arial, sans-serif
 
 }
 
@@ -74,7 +74,7 @@ i {
   background: orangered;
   border: none;
   color: white;
-  font-weight: bold;
+  font-weight: 650;
   align-self: center;
   padding: 15px 30px;
   margin-top: 30px;
@@ -107,7 +107,7 @@ i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);         /* w3school */
-  font-size: 1.13em;
+  font-size: 1.4em;
 }
 
 /* Tertiary Content 
@@ -133,9 +133,9 @@ i {
 .text-div > h1 {
   text-transform: uppercase;
   margin: 0;
-  /* letter-spacing: 0.1px;
-  word-spacing: 0.09em; */
-  font-weight: 600;
+  /* letter-spacing: 0.1px; */
+  word-spacing: 0.000001em;
+  font-weight: bolder;
   font-size: 2em;
   width: 100%;
 }
@@ -168,7 +168,8 @@ i {
   max-width: 100%;
   margin-bottom: 1em;
   color: rgb(34, 34, 34);
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 600;
   text-align: center;  
 }
 
@@ -192,13 +193,14 @@ i {
 }
 .div-1 > h5 {
   text-transform: uppercase;
-  margin: 1em 0;
-  color: rgb(34, 34, 34);
-  /* letter-spacing: 0.08em; */
+  margin: 1em 0 0.5em 0;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 .div-1 > p {
   color: rgb(180, 180, 180);
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 300;
 }
 
@@ -235,6 +237,7 @@ i {
   align-self: center;
   text-align: center;
   font-size: 2.3em;
+  font-weight: 1000;
 }
 
 
@@ -325,14 +328,63 @@ h5 > i {
   margin-top: -200px;
   z-index: 10;
   width: 100%;
-  height: auto;
+  max-height: 500px;
   position: relative;
 }
 .comment-footer > img {
   width: 100%;
-  height: auto;
-  position: absolute;
+  max-height: 500px;
   top: 0px;
   left: 0px;
   object-fit: cover;  
+}
+
+
+/* Community Section 
+================================= */
+
+.community { 
+  display: flex;
+  flex-direction: column;
+  margin: 5em 6%;  
+}
+.community-heading {
+  width: 100%;
+}
+.community-heading > h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.community-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.community-1 > img {
+  width: 100%;
+  /* min-height: 220px; */
+  max-height: 400px;
+}
+.community-1 > h5 {
+  align-self: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  color: rgb(34, 34, 34);
+}
+.community-1 > small {
+  text-transform: capitalize;
+  color: rgb(180, 180, 180);
+  align-self: center;
+  line-height: 1.8;
+  font-size: 0.8em;
+}
+.community > button {
+  background: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  border: 4px solid rgb(34, 34, 34);
+  align-self: center;
+  padding: 0.8em 1.8em;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 1em;
 }
