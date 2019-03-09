@@ -33,7 +33,7 @@ i {
   width: 100%;
   height: 78px;
   background: white;
-  z-index: 1;
+  z-index: 100;
 }
 .navbar {
   display: flex;
@@ -204,16 +204,6 @@ i {
 
 /* Video Content 
 ================================= */
-.primary {
-  width: 100%;
-  height: 450px;
-  margin-top: 35px;
-}
-.primary > img {
-  object-fit: cover;
-  width: 100%;
-  height: 450px;
-}
 .video-div {
   width: 100%;
   height: 400px;
@@ -221,7 +211,6 @@ i {
   position: relative;
 }
 .video-div > video {
-  object-fit: cover;
   width: 100%;
   height: 400px;
   position: absolute;
@@ -234,7 +223,7 @@ i {
 .video-text {
   display: flex;
   flex-direction: column;
-  top: 100px;
+  top: 150px;
   position: absolute;
   width: 100%;
 }
@@ -245,7 +234,7 @@ i {
   color: white; 
   align-self: center;
   text-align: center;
-  font-size: 2.4em;
+  font-size: 2.3em;
 }
 
 
@@ -253,7 +242,97 @@ i {
 ================================= */
 
 .comment-section {
-  /* width: 100%; */
+  margin-top: 5em;
+  margin-bottom: 5em;
   position: relative;
+  overflow: hidden;
   display: flex;
+  z-index: 50;
+}
+.comments {
+  width: 80%;
+  /* width: 20rem; */
+  overflow: hidden;
+  background: white;
+  margin: 0px auto;
+  padding: 1.5em 1.8em 4em 1.8em;
+}
+.comment-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-header > h5 {
+  margin-bottom: -4px;
+  color: rgb(34, 34, 34);
+  text-align: left;
+  font-size: 1em;
+  font-weight: 700;
+}
+h5 > i {
+  color: rgb(211, 183, 123);
+  text-align: left;
+  font-size: 1em;
+}
+.comment-header > small {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: 500;  
+  color: rgb(180, 180, 180);
+}
+.comment-top > small {
+  color: rgb(180, 180, 180);
+  text-align: left;
+  font-weight: 600;  
+}
+.comment-stars {
+  margin-bottom: 2em;
+}
+.comment-stars > i {
+  padding: 0px;
+}
+.comments > h4 {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  color: rgb(34, 34, 34);
+  text-align: left;
+  /* letter-spacing: 0.7px; */
+  font-weight: 550;
+  font-size: 1.1em;
+}
+.comment-para > p {
+  text-align: left;
+  color: rgb(102, 102, 102);
+  font-size: 0.78em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.comments > button {
+  padding-top: 1.2em;
+  background: none;
+  border: none;
+  font-size: 0.8em;
+  color: rgb(32, 142, 191);
+}
+
+.comment-footer {
+  margin-top: -200px;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.comment-footer > img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;  
 }
