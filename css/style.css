@@ -51,18 +51,18 @@ i {
 ================================= */
 .primary {
   width: 100%;
-  height: 40vh;
+  height: 450px;
   margin-top: 35px;
 }
 .primary > img {
   object-fit: cover;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 450px;
 }
 .image-text {
   display: flex;
   flex-direction: column;
-  top: 185px;
+  top: 180px;
   position: absolute;
   width: 100%;
 }
@@ -204,15 +204,26 @@ i {
 
 /* Video Content 
 ================================= */
-
-.video-div {
-  position: relative;
+.primary {
   width: 100%;
-  height: auto;
+  height: 450px;
+  margin-top: 35px;
+}
+.primary > img {
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+}
+.video-div {
+  width: 100%;
+  height: 400px;
+  margin-top: 35px;
+  position: relative;
 }
 .video-div > video {
+  object-fit: cover;
   width: 100%;
-  height: 440px;
+  height: 400px;
   position: absolute;
   top: 0px;
   left: 0px;
