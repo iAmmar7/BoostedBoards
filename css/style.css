@@ -51,6 +51,9 @@ i {
   position: absolute;
   top: 40%;
 }
+.logo:hover {
+  cursor: pointer;
+}
 .components {
   display: none;
 }
@@ -59,13 +62,16 @@ i {
 }
 .nav-btn > a > button {
   background: rgb(245, 72, 9);
-  border: none;
+  border: 4px solid rgb(245, 72, 9);
   color: white;
   font-weight: 650;
   font-size: 0.9em;
   align-self: center;
-  padding: 15px 30px;
+  padding: 11px 30px;
   margin-right: 5px;
+}
+.nav-btn > a > button:hover {
+  border-color: rgb(226, 140, 109);
 }
 .logo:first-child {
   margin-right: auto;
@@ -109,13 +115,16 @@ i {
 }
 .image-text > button {
   background: orangered;
-  border: none;
+  border: 4px solid orangered;
   color: white;
   font-weight: 650;
   font-size: 0.9em;
   align-self: center;
   padding: 15px 30px;
   margin-top: 30px;
+}
+.image-text > button:hover {
+  border-color: rgb(226, 140, 109);
 }
 
 /* Secondary Content 
@@ -125,7 +134,7 @@ i {
   display: flex;
   flex-direction: column;
   margin-top: 1.6em;
-  margin-bottom: 1.6em;
+  margin-bottom: 4em;
   position: relative;
 }
 .img-1, .img-2, .img-3 {
@@ -133,12 +142,18 @@ i {
   text-align: center;
   color: white;
   overflow: hidden;
+  max-width: 100%;
   margin: 0 25px;
 }
 .img-1 > img, .img-2 > img, .img-3 > img {
-  width: 100%;
-  height: 45vw;
+  max-width: 100%;
+  max-height: 45vw;
+  overflow: hidden;
+  transition: transform 8s ease-in;
   margin: 0px 0px 0.6em;
+}
+.img-1 > img:hover, .img-2 > img:hover, .img-3 > img:hover {
+  transform: scale(1.2);
 }
 .img-1 > h4, .img-2 > h4, .img-3 > h4 {
   position: absolute;
@@ -222,10 +237,15 @@ i {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
+  overflow: hidden;
 }
 .div-1 > img {
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  transition: transform 8s ease-in-out;
+}
+.div-1 > img:hover {
+  transform: scale(1.2);
 }
 .div-1 > h5, .div-1 > p {
   align-self: center;
@@ -401,11 +421,16 @@ h5 > i {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 .community-ads > img {
   width: 100%;
   /* min-height: 220px; */
   max-height: 400px;
+  transition: transform 8s ease-in-out;
+}
+.community-ads > img:hover {
+  transform: scale(1.2);
 }
 .community-ads > h5 {
   align-self: center;
@@ -431,13 +456,17 @@ h5 > i {
   font-size: 0.9em;
   margin-top: 1em;
 }
+.community > button:hover {
+  border-color: gray;
+}
 
 /* Footer Content 
 ================================= */
 .footer {
   display: none;
-  padding-top: 5em;
+  padding-top: 6em;
   padding-bottom: 5em;
+  padding-right: 0.5em;
   background: rgb(255, 255, 255);
 }
 .all-lists {
@@ -464,6 +493,10 @@ h5 > i {
   color: #666666;
   line-height: 1.2;
   font-size: 15px;
+  transition: color 10ms ease;
+}
+.list-1 > li > a:hover {
+  color: #9b9999;
 }
 .list-1 > button {
   background: transparent;
@@ -472,16 +505,8 @@ h5 > i {
 }
 .list-1 > button > img {
   height: 1.5em;
+  cursor: pointer;
 }
-
-
-/* img {
-  max-width: 100%;
-  transition: transform 2s;
-}
-img:hover {
-  transform: scaleX(1.2);
-} */
 
 
 @media (min-width: 768px) {
@@ -497,9 +522,7 @@ img:hover {
   .secondary {
     flex-direction: row;
     justify-content: center;
-    max-width: 1150px;
-    margin-right: 0;
-    margin-left: 0;
+    max-width: 100%;
   }
   .img-1, .img-2, .img-3 {
     margin: 0 2%;
@@ -582,6 +605,9 @@ img:hover {
   .components > li {
     padding-right: 12%;
   }
+  /* .components > li:hover {
+    background: gray;
+  } */
   .components > li > a {
     color: rgb(0, 0, 0);
     font-weight: 700;
@@ -617,6 +643,18 @@ img:hover {
     position: absolute;
     width: 40%;
     align-self: flex-end;
+  }
+
+  /* Video Content 
+  ================================= */
+  .video-div {
+    height: 750px;
+  }
+  .video-div > video {
+    height:  750px;
+  }
+  .video-text {
+    top: 50%;
   }
 
   /* Quaternary Content 
