@@ -11,25 +11,11 @@ html{
 }
 body {
   background: rgb(242, 242, 242);
-  font-family: 'Abel', "“Helvetica Neue”", Helvetica, Arial, sans-serif
-
+  font-family: 'Abel', "“Helvetica Neue”", Helvetica, Arial, sans-serif;
 }
 
 /* Navbar Content 
 ================================= */
-
-a {
-  color: black;
-}
-i {
-  font-size: 1.3em;
-  padding: 8px; 
-}
-.cart {
-  background: rgb(242, 242, 242);
-  padding: 18px 9px 8px 9px;
-  align-self: center;
-}
 .main-header {
   position: fixed;
   top: 0;
@@ -37,28 +23,57 @@ i {
   height: 77px;
   background: white;
   z-index: 100;
-  padding-right: 5px;
 }
 .navbar {
   display: flex;
-  height: 100%;
+  height: 77px;
+  align-content: center;
+  padding: 0 25px 0 25px;
 }
-.navbar li {
+.logo-div, .nav-side {
+  display: flex;
+}
+.logo-div {
+  margin-right: auto;
+}
+.logo-div > li, .nav-side > li {
   align-self: center;
-  margin: 0 10px;
 }
-.logo > h1 > a {
+.logo > h1 > i {
+  font-size: 0.9em;
+  margin-right: 20px;
+}
+.logo-heading {
   position: absolute;
-  top: 40%;
+  left: 55px;
+  top: -5px; 
+}
+.logo-heading > h1 > a {
+  font-size: 0.5em;
+  font-weight: bolder;
+  margin-left: 5px;
+}
+.nav-side > li > a > .cart {
+  margin-right: 22px;
+  background: rgb(242, 242, 242);
+  padding: 18px 9px 8px 9px;
+  align-self: center;
 }
 .logo:hover {
   cursor: pointer;
-}
+} 
 .components {
   display: none;
 }
+a {
+  color: black;
+}
+i {
+  font-size: 1.3em;
+}
 .nav-btn {
   display: none;
+  margin-right: 30px;
 }
 .nav-btn > a > button {
   background: rgb(245, 72, 9);
@@ -67,24 +82,10 @@ i {
   font-weight: 650;
   font-size: 0.9em;
   align-self: center;
-  padding: 11px 30px;
-  margin-right: 5px;
+  padding: 11px 25px;
 }
 .nav-btn > a > button:hover {
   border-color: rgb(226, 140, 109);
-}
-.logo:first-child {
-  margin-right: auto;
-  color: black;
-  text-decoration: none;
-  font-size: 8px;
-  font-weight: bolder;
-}
-.navbar:last-child {
-  margin-right: 4px;
-}
-.logo > h1 > i {
-  font-size: 30px;
 }
 
 /* Primary Content 
@@ -149,7 +150,7 @@ i {
   max-width: 100%;
   max-height: 45vw;
   overflow: hidden;
-  transition: transform 8s ease-in;
+  transition: transform 2s ease-in;
   margin: 0px 0px 0.6em;
 }
 .img-1 > img:hover, .img-2 > img:hover, .img-3 > img:hover {
@@ -242,7 +243,7 @@ i {
 .div-1 > img {
   width: 100%;
   max-width: 100%;
-  transition: transform 8s ease-in-out;
+  transition: transform 2s ease-in;
 }
 .div-1 > img:hover {
   transform: scale(1.2);
@@ -427,7 +428,7 @@ h5 > i {
   width: 100%;
   /* min-height: 220px; */
   max-height: 400px;
-  transition: transform 8s ease-in-out;
+  transition: transform 2s ease-in;
 }
 .community-ads > img:hover {
   transform: scale(1.2);
@@ -594,8 +595,23 @@ h5 > i {
 
   /* Navbar Section 
   ================================= */
-  .main-header {
-    padding-left: 3%;
+  .main-header, .navbar {
+    height: 80px;
+  }
+  .navbar {
+    padding: 0 40px 0 40px;
+  }
+  .logo-div {
+    margin-right: 15%;
+    align-self: center;
+  }
+  .logo-heading {
+    position: absolute;
+    left: 70px;
+    top: -2px; 
+  }
+  .logo-heading > h1 > a {
+    font-size: 0.6em;
   }
   .components {
     display: flex;
@@ -603,20 +619,22 @@ h5 > i {
     margin-right: auto;
   }
   .components > li {
-    padding-right: 12%;
+    align-self: center;
+    padding: 1em 2em;
+    transition: background 0.5s; 
   }
-  /* .components > li:hover {
-    background: gray;
-  } */
+  .components > li:hover {
+    background: rgb(242, 242, 242);
+  }
   .components > li > a {
     color: rgb(0, 0, 0);
     font-weight: 700;
   }
+  .nav-btn {
+    margin-right: 0px;
+  }
   .bar {
     display: none;
-  }
-  .logo:first-child {
-    margin-right: 25em;
   }
 
   /* Primary Content 
