@@ -140,29 +140,29 @@ i {
 }
 .img-1, .img-2, .img-3 {
   position: relative;
-  text-align: center;
+  align-self: center;
   color: white;
   overflow: hidden;
-  max-width: 100%;
-  margin: 0 25px;
+  width: 90%;
+  margin: 0.6em 25px;
 }
 .img-1 > img, .img-2 > img, .img-3 > img {
-  max-width: 100%;
+  width: 100%;
   max-height: 45vw;
   overflow: hidden;
   transition: transform 2s ease-in;
-  margin: 0px 0px 0.6em;
 }
 .img-1 > img:hover, .img-2 > img:hover, .img-3 > img:hover {
   transform: scale(1.2);
 }
 .img-1 > h4, .img-2 > h4, .img-3 > h4 {
   position: absolute;
+  text-align: center;
   width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);         /* w3school */
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 /* Tertiary Content 
