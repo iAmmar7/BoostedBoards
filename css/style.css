@@ -402,6 +402,10 @@ h5 > i {
   object-fit: cover;  
 }
 
+.comments-1, .comments-3 {
+  display: none;
+}
+
 
 /* Community Section 
 ================================= */
@@ -692,5 +696,10 @@ h5 > i {
     margin-right: -24px;
   }
   
+  /* Comment Content 
+  ================================= */
+  .comments-1, .comments-3 {
+    display: initial;
+  }
 
 }
